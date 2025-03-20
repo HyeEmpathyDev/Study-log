@@ -1,15 +1,15 @@
 # 📝 Study-log
 
-<p>🔥 공부한 내용을 기록해보고자 함 🔥</p>
+🔥 공부한 내용을 기록해보고자 함 🔥
 
 ## 🗂️ Studylog 카테고리
 
-- [01_Why_Study](01_Why_Study/)
-- [02_Terms](02_Terms/)
-- [03_Questions](03_Questions/)
-- [04_Frontend](04_Frontend/)
-- [05_Backend](05_Backend/)
-- [06_Review](06_Review/)
+- [01_Why_Study](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/01_Why_Study)
+- [02_Terms](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/02_Terms)
+- [03_Questions](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/03_Questions)
+- [04_Frontend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/04_Frontend)
+- [05_Backend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/05_Backend)
+- [06_Review](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/06_Review)
 
 ## ✨ 나만의 커밋 컨벤션
 
