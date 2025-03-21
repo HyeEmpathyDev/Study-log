@@ -8,9 +8,41 @@
 
 ### ✅ 객체(Object)란?
 
-데이터(속성, Property)와 기능(메서드, Method)를 포함하는 독립적인 개체
-객체 지향 언어에서 쓰인다.
+- 데이터(속성, Property)와 기능(메서드, Method)를 포함하는 독립적인 개체
+  객체 지향 언어에서 쓰인다.
 
+- 객체는 **키(Key)**와 **밸류(Value)**로 구성
+
+  - 키(Key): 객체의 속성 이름
+
+  - 밸류(Value): 해당 속성의 값 (데이터나 기능이 될 수 있음)
+
+### ✅ 키(Key) = 속성(Property)의 이름
+
+- **속성(Property)** 은 객체 내에서 데이터나 기능을 나타내는 항목이고, 그 항목을 구분하기 위해 사용하는 이름이 바로 **키(Key)**
+
+  즉, **키(Key)** 는 객체 안에서 각 속성을 식별하는 이름이고, **속성(Property)** 은 그 값
+
+예를 들어, "자동차"를 프로그래밍으로 표현한다고 하면?
+
+```javascript
+const car = {
+  brand: 'Tesla', // key: "brand", value: "Tesla"
+  color: 'Red', // key: "color", value: "Red"
+  speed: 0, // key: "speed", value: 0
+  drive: function () {
+    // key: "drive", value: function() {...}
+    console.log('자동차가 달립니다!');
+  },
+};
+```
+
+✔️키(Key): brand, color, speed, drive<br>
+✔️밸류(Value): "Tesla", "Red", 0, function() {...}<br>
+✔️속성(Property): 객체 내에서 데이터나 기능을 나타내는 항목<br>
+
+    예: "brand" 속성은 자동차의 브랜드를 나타냄
+    예: "drive" 속성은 자동차가 달리는 기능을 나타냄
 
 ### ✅ 객체지향 언어(Object-Oriented Programming, OOP)란?
 
@@ -27,11 +59,11 @@
 ✔️ 속성(Property) → 객체의 데이터 (변수)<br>
 ✔️ 메서드(Method) → 객체의 기능 (함수)<br>
 
-예를 들어, "자동차"를 프로그래밍으로 표현한다고 하면?
+### ✅ 왜 객체지향을 사용할까?
 
-✔️ 속성(Property): 브랜드, 색상, 속도<br>
-✔️ 메서드(Method): 달리다, 멈추다, 경적 울리다<br>
+- **"자동차는 브랜드, 색상, 속도라는 속성이 있고, 달리다()라는 동작"**
 
+👉 즉, 자동차라는 객체를 만들고, 객체지향을 사용하여 이 속성과 동작을 그대로 코드에 옮긴다.....
 
 ### ❗ 정리하면서 느낀 점
 
