@@ -5,7 +5,7 @@
 기초가 중요하다고 생각해서..
 
 ### ✅ VUE 기본 구조?
-
+---
 ```html
 <div id="app">{{ message }}</div>
 
