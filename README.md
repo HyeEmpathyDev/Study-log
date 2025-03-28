@@ -9,7 +9,7 @@
 - [03_Questions](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/03_Questions)
 - [04_Frontend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/04_Frontend)
 - [05_Backend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/05_Backend)
-- [06_Review](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/06_Review)
+- [06_Project](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/06_Review)
 
 ## ✨ 나만의 커밋 컨벤션
 
