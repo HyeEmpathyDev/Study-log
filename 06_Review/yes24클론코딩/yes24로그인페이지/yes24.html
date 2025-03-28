@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yes24</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 섹션으로 전체 감싸기, 반응형 웹 만들려면 전체를 묶어야 할 것 같아서..
+     (떠오르는 대로 하긴 했는데, 더 많이 쓰고 더 좋은 코드는 무엇일까?) -->
+    <section>
+      <!-- 헤더 영역 -->
+      <div class="header">
+        <div>
+          <a href="https://www.yes24.com/Main/default.aspx">
+            <img src="./assets/logo.png" alt="로고입니다" />
+          </a>
+        </div>
+        <span><b>로그인</b></span>
+        <div>
+          <style>
+            a {
+              text-decoration: none;
+            }
+          </style>
+          <a href="https://www.yes24.com/Member/Join/Accept.aspx"> 회원가입</a>
+        </div>
+      </div>
+      <!-- 메인 영역 -->
+      <div class="container">
+        <div class="login">
+          <!-- 탭 메뉴 시작 -->
+          <div class="tabs">
+            <input type="radio" name="tab" id="tab1" checked />
+            <label for="tab1">회원</label>
+
+            <input type="radio" name="tab" id="tab2" />
+            <label for="tab2">비회원 주문확인</label>
+
+            <div class="tab-content" id="content1">
+              <!-- 회원 로그인 폼 -->
+              <form>
+                <input type="text" placeholder="아이디" />
+                <input type="password" placeholder="비밀번호" />
+                <input type="checkbox" />로그인 상태 유지
+                <input type="checkbox" />아이디 저장
+                <button type="submit">로그인</button>
+                <div class="links">
+                  <a href="#">아이디 찾기</a> |
+                  <a href="#">비밀번호 찾기</a>
+                </div>
+              </form>
+              <div class="social-login">
+                <div>
+                  <a
+                    href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+                    target="_blank"
+                    >네이버 아이디로 로그인</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount#login"
+                    >카카오 아이디로 로그인</a
+                  >
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/login.php" target="_blank"
+                    >페이스북 아이디로 로그인</a
+                  >
+                </div>
+                <div>모바일 간편 로그인</div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="content2">
+              <!-- 비회원 주문확인 -->
+              <form>
+                <input type="text" placeholder="주문번호" />
+                <input type="password" placeholder="주문 비밀번호" />
+                <button type="submit">확인</button>
+                <div class="links">
+                  <a href="#">주문번호 찾기</a> |
+                  <a href="#">주문 비밀번호 찾기</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- 이미지 영역 -->
+          <div class="images">
+            <div>
+              <a href="https://event.yes24.com/yesBenefit" target="_blank">
+                <img
+                  src="./assets/이달의 혜택.jpg"
+                  alt="이달의 혜택 모음 링크"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="http://ticket.yes24.com/New/Perf/Detail/DetailSpecial.aspx?IdPerf=52732"
+                target="_blank"
+              >
+                <img src="./assets/반 고흐.jpg.jpg" alt="빈 고흐 공연 링크" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 회원가입 이벤트 영역 -->
+      <div class="memberevent">
+        <a href="https://www.yes24.com/notice/FirstClass/newmemCoupon.aspx">
+          <img src="./assets/memberevent.png" alt="회원가입 이벤트" />
+        </a>
+      </div>
+
+      <!-- 풋터영역 -->
+      <div class="footer">
+        <p>Copyright © YES24 Corp. All Rights Reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>

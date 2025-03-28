@@ -1,0 +1,165 @@
+/* 초기화... 의례 이렇게 한다고..? 이게 맞나? 싶지만 일단은 해봄*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/* yes24페이지가 화면을 줄이거나 키워도 전체에 색이 들어가서
+ 바디 영역에 색이 있다고 생각하고 넣음 */
+body {
+  background-color: rgba(247, 247, 247, 0.973);
+}
+
+section {
+  margin: 0 auto; /* 중앙 정렬(관습적으로 쓰는 거 외우기)*/
+  padding: 0 20%;
+  min-width: 650px;
+  max-width: 950px;
+  max-height: 1000px;
+}
+
+.header {
+  display: flex;
+  /*요소를 가로로 배치, 수업시간에는 float를 배웠지만, 
+  float는 텍스트와 그림을 배치할 때 쓰고, 
+  나중에 clear: both로 해제해줘야 하는 불편함도 있고, 
+  세밀하게 조정어려움. flex를 기억하자*/
+  justify-content: space-between; /* 양끝 정렬 (중간 간격 자동 조정)*/
+  align-items: center; /*세로 정렬*/
+}
+/* 상단 로그인글자 크기 */
+.header span {
+  font-size: 2em;
+}
+/* 회원가입 상자 크기 */
+.header div:nth-of-type(2) {
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.container {
+  display: flex; /* 로그인 영역과 이미지 영역을 가로로 정렬 */
+  justify-content: space-around;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 8% 5%;
+  margin-bottom: 1%;
+}
+
+.login {
+  display: flex;
+  gap: 5%;
+}
+/* 로그인 탭 콘텐츠 영역 (좌측 영역) */
+.tabs {
+  flex: 1;
+  min-width: 0;
+}
+/* 이미지 영역 (우측 영역) */
+.images {
+  flex: 1; /* 탭 영역과 동일 비율로 배치 */
+  min-width: 0; /* flex 넘침 방지 (중요!) */
+  padding-bottom: 10%; /* 하단 여백 추가 (디자인 여유 공간) */
+}
+
+/* 이미지 스타일 */
+.images img {
+  width: 100%; /* 부모 요소(.images)의 너비에 맞춤 */
+  max-width: 100%; /* 부모보다 커지지 않도록 제한 */
+  height: auto; /* 비율 유지하면서 자동 높이 설정 */
+  display: block; /* inline 속성을 제거해서 여백 없앰 */
+  object-fit: cover; /* 이미지를 비율 유지하며 영역에 꽉 채움 */
+}
+
+/* 다른방법으로 로그인 창 */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 100px;
+}
+
+.social-login div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+/* 숨겨진 라디오 버튼 */
+.tabs input[type='radio'] {
+  display: none;
+}
+
+/* 탭 라벨 기본 스타일 */
+.tabs label {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  width: 150px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  margin-right: -1px;
+}
+
+/* 탭 콘텐츠 */
+.tab-content {
+  display: none;
+  padding: 2%;
+  background: white;
+}
+
+/* 선택된 탭 내용 보이기 */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+/* 선택된 탭 라벨 강조 */
+#tab1:checked + label,
+#tab2:checked + label {
+  background-color: white;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  color: #007aff;
+}
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid lightgray;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+input[type='checkbox'] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transform: scale(2);
+  margin-right: 10px;
+  font-size: 0.5em;
+  color: gray;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(4, 92, 224, 0.747);
+  color: white;
+  font-size: 1.5em;
+}
+
+.footer {
+  text-align: center;
+}
