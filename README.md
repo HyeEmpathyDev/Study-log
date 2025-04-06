@@ -11,14 +11,15 @@
 - [05_Backend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/05_Backend)
 - [06_Project](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/06_Project)
 - [07_Review](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/07_Review)
+- [08_KB Study](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/08_KB%20Study)
 
 ## ✨ 나만의 커밋 컨벤션
 
-| 태그      | 설명                                        |
-| --------- | ------------------------------------------- |
-| `feat:`   | 새로운 개념 정리 추가                       |
-| `fix:`    | 수정 (오타 수정, 문장 다듬기)               |
-| `remove:` | 불필요한 파일 삭제                          |
-| `style:`  | 마크다운 문법 개선 (줄바꿈, 제목 스타일 등) |
-| `chore:`  | 폴더 구조 변경, 문서 이동                   |
-| `tag:`    | 특정 키워드 태깅 (예: `#회고`, `#TIL`)      |
+| 태그        | 설명                                        |
+|-----------| ------------------------------------------- |
+| `Feat:`   | 새로운 개념 정리 추가                       |
+| `Fix:`    | 수정 (오타 수정, 문장 다듬기)               |
+| `Remove:` | 불필요한 파일 삭제                          |
+| `Style:`  | 마크다운 문법 개선 (줄바꿈, 제목 스타일 등) |
+| `Chore:`  | 폴더 구조 변경, 문서 이동                   |
+| `Tag:`    | 특정 키워드 태깅 (예: `#회고`, `#TIL`)      |
