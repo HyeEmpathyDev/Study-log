@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      X: <input v-model.number type="text" vaule="x"/><br />
+      Y: <input v-model.number type="text" value="y"/><br />
+      <div: result>결과 : </div:>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+            let x = 0;
+            let y = 0;
+
+          return {
+            result: computed(
+               result(this.x+this.y)
+            ),
+          },
+        },
+      })
+      vm.mount('#app');
+    </script>
+  </body>
+</html>
