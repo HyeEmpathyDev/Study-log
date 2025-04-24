@@ -11,6 +11,7 @@
 - [05_Backend](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/05_Backend)
 - [06_Project](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/06_Project)
 - [07_Review](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/07_Review)
+- [08_KB Study](https://github.com/HyeEmpathyDev/Study-log/tree/Study_log/08_KB%20Study)
 
 ## ✨ 나만의 커밋 컨벤션
 
