@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/03_Class" isTestSource="false" packagePrefix="ch06" />
       <sourceFolder url="file://$MODULE_DIR$/04_Inherit" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/05_Interface" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_Nested" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_Exception" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
