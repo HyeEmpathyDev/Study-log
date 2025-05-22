@@ -1,41 +1,43 @@
 import java.util.*;
+
 class Solution {
-  public int solution(int[] info, int[][] edges) {
+    public int solution(int[] info, int[][] edges) {
         List<Integer>[] graph = new ArrayList[info.length];
         for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<>();
         }
 
         for (int[] edge : edges) {
-            int parent = edge[0];
-            int child = edge[1];
-            graph[parent].add(child);
+            graph[edge[0]].add(edge[1]);
         }
 
-        int[] maxSheep = {0};
-        List<Integer> nextNodes = new ArrayList<>();
-        nextNodes.add(0);
+        int maxSheep = 0;
+        Stack<Object[]> stack = new Stack<>();
+        stack.push(new Object[]{0, 0, 0, List.of(0)});
 
-        dfs(0, 0, 0, nextNodes, info, graph, maxSheep);
+        while (!stack.isEmpty()) {
+            Object[] curr = stack.pop();
+            int node = (int) curr[0];
+            int sheep = (int) curr[1];
+            int wolf = (int) curr[2];
+            List<Integer> candidates = (List<Integer>) curr[3];
 
-        return maxSheep[0];
-    }
+            if (info[node] == 0) sheep++;
+            else wolf++;
 
-    private void dfs(int current, int sheep, int wolf, List<Integer> nextNodes,
-                     int[] info, List<Integer>[] graph, int[] maxSheep) {
-        if (info[current] == 0) sheep++;
-        else wolf++;
+            if (wolf >= sheep) continue;
 
-        if (wolf >= sheep) return;
+            maxSheep = Math.max(maxSheep, sheep);
 
-        maxSheep[0] = Math.max(maxSheep[0], sheep);
+            List<Integer> nextCandidates = new ArrayList<>(candidates);
+            nextCandidates.remove(Integer.valueOf(node));
+            nextCandidates.addAll(graph[node]);
 
-        List<Integer> newNextNodes = new ArrayList<>(nextNodes);
-        newNextNodes.remove(Integer.valueOf(current));
-        newNextNodes.addAll(graph[current]);
-
-        for (int next : newNextNodes) {
-            dfs(next, sheep, wolf, newNextNodes, info, graph, maxSheep);
+            for (int next : nextCandidates) {
+                stack.push(new Object[]{next, sheep, wolf, new ArrayList<>(nextCandidates)});
+            }
         }
+
+        return maxSheep;
     }
-}
+}  
